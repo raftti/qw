@@ -1,0 +1,25 @@
+{
+  "name": "event_panel2",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@pbe/react-yandex-maps": "^1.2.5",
+    "appwrite": "^13.0.1",
+    "next": "14.0.3",
+    "react": "^18",
+    "react-dom": "^18",
+    "yet-another-react-lightbox": "^3.15.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "typescript": "^5"
+  }
+}

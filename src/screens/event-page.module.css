@@ -1,0 +1,378 @@
+.logoWrapper {
+  margin-top: 10px;
+  width: 100%;
+  background: var(--light-gray);
+}
+.logoSubWrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.logo {
+  width: 180px;
+  padding: 10px 20px;
+  height: auto;
+  display: block;
+}
+.wrapper {
+  margin: 0 auto;
+  max-width: 1240px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+}
+.h1 {
+  color: var(--gray-900);
+  font-weight: 100;
+  font-size: 22px;
+}
+.imagesContainer {
+  justify-content: space-between;
+  display: flex;
+  gap: 2vw;
+}
+.imageContainer > .h1 {
+  margin-top: 0.5vw;
+  font-size: 26px;
+}
+
+.colorBlack {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.colorBlack {
+  color: black;
+  font-weight: bold;
+}
+
+.timeContainer {
+  display: flex;
+  align-items: flex-end;
+  gap: 5px;
+}
+
+
+.creatorContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.creatorImage {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.timeContainer > .colorBlack {
+    position: relative;
+    transform: translateY(2px);
+}
+
+.galleryWrapper {
+    width: 800px;
+}
+
+.mapWrapper {
+    width: 100%;
+    height: 300px;
+}
+.mapContainer {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1vw;
+}
+.map {
+    width: 100%;
+    height: 100%;
+}
+
+.accordion {
+    width: 100%;
+}
+
+.buttonCont {
+  display: flex;
+  width: 100%;
+  gap: 5px;
+  margin: 0.5vw 0;
+}
+
+.buttonPlMarket {
+  text-decoration: none;
+  width: 50%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  padding: 0px 15px;
+  background-color: rgb(66, 66, 66);
+  border-radius: 10px;
+  color: white;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  transition-duration: 0.2s;
+}
+
+.buttonArrow {
+  position: absolute;
+  right: 0;
+  width: 30px;
+  height: 100%;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonPlMarket:hover {
+  background-color: rgb(77, 77, 77);
+  transition-duration: 0.2s;
+}
+
+.buttonPlMarket:hover .buttonArrow {
+  animation: slide-right 0.6s ease-out both;
+}
+/* arrow animation */
+@keyframes slide-right {
+  0% {
+    transform: translateX(-10px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.buttonPlMarket:active {
+  transform: translate(1px, 1px);
+  transition-duration: 0.2s;
+}
+
+.buttonDownload {
+  width: 40%;
+  text-decoration: none;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: 600;
+  padding: 0.5em 2em;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid black;
+  box-shadow: 0 0 0 0 black;
+}
+
+.buttonDownload:hover {
+  transform: translateY(-4px) translateX(-2px);
+  box-shadow: 2px 5px 0 0 black;
+}
+
+.buttonDownload:active {
+  transform: translateY(2px) translateX(1px);
+  box-shadow: 0 0 0 0 black;
+}
+@media screen and (max-width: 1200px) {
+  .galleryWrapper {
+    width: 700px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .logo {
+    width: 150px;
+  }
+  .galleryWrapper {
+    width: 500px;
+  }
+  .mapWrapper {
+    width: 100%;
+    height: 250px;
+  }
+  .descContainer {
+    line-height: 1.1;
+  }
+  .h1 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+    .logo {
+        width: 15vw;
+      }
+  .buttonDownload {
+    width: 35%;
+  }
+  .mapWrapper {
+    height: 200px;
+  }
+  .creatorContainer > h1 {
+    font-size: larger;
+  }
+  .timeContainer > .colorBlack {
+    position: relative;
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .buttonDownload {
+    width: 30%;
+    padding: 0.3em 1.8em;
+    font-size: 15px;
+}
+.buttonPlMarket {
+    width: 40%;
+    height: 30px;
+    padding: 0px 15px;
+    font-size: 14px;
+}
+.buttonCont{
+    flex-direction: column;
+}
+  .mapWrapper {
+    height: 200px;
+  }
+  .galleryWrapper {
+    width: 400px;
+  }
+  .imageContainer > .h1 {
+    font-size: 18px;
+  }
+  .descContainer > .h1 {
+    font-size: 16px;
+  }
+  .creatorContainer > h1 {
+    font-size: large;
+  }
+}
+
+@media screen and (max-width: 650px) {
+    .wrapper {
+        padding-top: 10px;
+    }
+    .imagesContainer {
+        align-items: center;
+    }
+    .buttonDownload {
+        width: 21%;
+        white-space: nowrap;
+        padding: 0.3em 1.8rem;
+        padding-left: 1.4rem;
+        font-size: 13px;
+    }
+    .buttonPlMarket {
+        width: 30%;
+        height: 25px;
+        padding: 0px 15px;
+        font-size: 12px;
+    }
+    .logoSubWrapper {
+        width: 400px;
+    }
+    .logo {
+        width: 100px;
+        padding: 10px 0;
+    }
+  .imagesContainer {
+    flex-direction: column;
+  }
+  .mapContainer {
+    flex-direction: column-reverse;
+    gap: 3vw;
+    width: 400px;
+  }
+  .wrapper {
+    max-width: 500px;
+    justify-content: center;
+  }
+  .descWrapper {
+      display: flex;
+      flex-direction: column-reverse;
+  }
+  .descContainer {
+    line-height: 1.2;
+  }
+  .creatorContainer {
+    padding: 10px 0;
+  }
+}
+
+
+@media screen and (max-width: 440px) {
+    .logo {
+        width: 90px;
+    }
+  .galleryWrapper {
+    max-width: 350px;
+  }
+  .mapContainer {
+    row-gap: 2vw;
+  }
+  .timeContainer > .colorBlack {
+    position: relative;
+    transform: translateY(-1px);
+  }
+  .mapContainer {
+    max-width: 350px;
+  }
+  .logoSubWrapper{
+    max-width: 350px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .buttonDownload {
+    padding-left: .9rem;
+  }
+    .descContainer {
+        line-height: 1.2;
+      }
+    .logoSubWrapper{
+        max-width: 300px;
+    } 
+    .galleryWrapper {
+        max-width: 300px;
+    }
+    .descWrapper {
+        flex: 1;
+    }
+    .mapContainer {
+        max-width: 320px;
+        align-items: center;
+        gap: 4vw;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .descContainer {
+        line-height: 1.2;
+        max-width: 270px;
+      }
+      .logo {
+        width: 80px;
+      }
+    .logoSubWrapper{
+        max-width: 270px;
+    } 
+    .galleryWrapper {
+        max-width: 270px;
+    }
+    .descWrapper {
+        flex: 1;
+    }
+    .mapContainer {
+        max-width: 290px;
+        align-items: center;
+        gap: 4vw;
+    }
+}
